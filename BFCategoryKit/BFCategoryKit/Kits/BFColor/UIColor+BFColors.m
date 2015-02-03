@@ -10,6 +10,20 @@
 
 @implementation UIColor (BFColors)
 
+#pragma mark- RGB Color
+
++ (UIColor *)colorWithRGB:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
+    return [UIColor colorWithRGB:red green:green blue:blue alpha:1.0f];
+}
+
++ (UIColor *)colorWithRGB:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha {
+    
+    return [UIColor colorWithRed:red/255.0f
+                           green:green/255.0f
+                            blue:blue/255.0f
+                           alpha:alpha];
+}
+
 #pragma mark- Hex Color
 
 + (UIColor *)colorWithHexString:(NSString *)hexString {
@@ -119,6 +133,28 @@
                            green:(CGFloat)((arc4random() % 1000) / 1000.0f)
                             blue:(CGFloat)((arc4random() % 1000) / 1000.0f)
                            alpha:(CGFloat)((arc4random() % 1000) / 1000.0f)];
+}
+
+#pragma mark - Gradient Color
+
++ (UIColor*)gradientFromColor:(UIColor*)c1 toColor:(UIColor*)c2 withHeight:(int)height {
+    
+    CGSize size = CGSizeMake(1, height);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    
+    NSArray* colors = [NSArray arrayWithObjects:(id)c1.CGColor, (id)c2.CGColor, nil];
+    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (__bridge CFArrayRef)colors, NULL);
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0, 0), CGPointMake(0, size.height), 0);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
+    UIGraphicsEndImageContext();
+    
+    return [UIColor colorWithPatternImage:image];
 }
 
 @end
