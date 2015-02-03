@@ -14,7 +14,8 @@
 		CD920C711A80EEA600425A21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD920C701A80EEA600425A21 /* Images.xcassets */; };
 		CD920C741A80EEA600425A21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD920C721A80EEA600425A21 /* LaunchScreen.xib */; };
 		CD920C801A80EEA600425A21 /* BFCategoryKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */; };
-		CD920C8F1A80EF5900425A21 /* NSString+BFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C8E1A80EF5900425A21 /* NSString+BFHelper.m */; };
+		CD920C991A80FA7100425A21 /* NSString+BFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C981A80FA7100425A21 /* NSString+BFHelper.m */; };
+		CD920C9C1A80FA9100425A21 /* UIColor+BFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,10 @@
 		CD920C791A80EEA600425A21 /* BFCategoryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCategoryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C7E1A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCategoryKitTests.m; sourceTree = "<group>"; };
-		CD920C8D1A80EF5900425A21 /* NSString+BFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFHelper.h"; sourceTree = "<group>"; };
-		CD920C8E1A80EF5900425A21 /* NSString+BFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFHelper.m"; sourceTree = "<group>"; };
+		CD920C971A80FA7100425A21 /* NSString+BFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFHelper.h"; sourceTree = "<group>"; };
+		CD920C981A80FA7100425A21 /* NSString+BFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFHelper.m"; sourceTree = "<group>"; };
+		CD920C9A1A80FA9100425A21 /* UIColor+BFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFColors.h"; sourceTree = "<group>"; };
+		CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +87,7 @@
 		CD920C621A80EEA600425A21 /* BFCategoryKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD920C891A80EEDF00425A21 /* BFStringCategory */,
+				CD920C941A80FA7100425A21 /* Kits */,
 				CD920C671A80EEA600425A21 /* AppDelegate.h */,
 				CD920C681A80EEA600425A21 /* AppDelegate.m */,
 				CD920C6A1A80EEA600425A21 /* ViewController.h */,
@@ -123,13 +126,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD920C891A80EEDF00425A21 /* BFStringCategory */ = {
+		CD920C941A80FA7100425A21 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
-				CD920C8D1A80EF5900425A21 /* NSString+BFHelper.h */,
-				CD920C8E1A80EF5900425A21 /* NSString+BFHelper.m */,
+				CD920C951A80FA7100425A21 /* BFColor */,
+				CD920C961A80FA7100425A21 /* BFString */,
 			);
-			path = BFStringCategory;
+			path = Kits;
+			sourceTree = "<group>";
+		};
+		CD920C951A80FA7100425A21 /* BFColor */ = {
+			isa = PBXGroup;
+			children = (
+				CD920C9A1A80FA9100425A21 /* UIColor+BFColors.h */,
+				CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */,
+			);
+			path = BFColor;
+			sourceTree = "<group>";
+		};
+		CD920C961A80FA7100425A21 /* BFString */ = {
+			isa = PBXGroup;
+			children = (
+				CD920C971A80FA7100425A21 /* NSString+BFHelper.h */,
+				CD920C981A80FA7100425A21 /* NSString+BFHelper.m */,
+			);
+			path = BFString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */,
-				CD920C8F1A80EF5900425A21 /* NSString+BFHelper.m in Sources */,
+				CD920C991A80FA7100425A21 /* NSString+BFHelper.m in Sources */,
 				CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */,
 				CD920C661A80EEA600425A21 /* main.m in Sources */,
+				CD920C9C1A80FA9100425A21 /* UIColor+BFColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
