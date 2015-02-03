@@ -11,8 +11,10 @@
 @interface UIColor (BFColors)
 
 
-
-
+/* 将0X或者#开头的颜色字符串转换成UIColor */
++ (UIColor *)colorWithHexString:(NSString *)hexString;
+/* 将UIColor转换成0X或者#开头的字符串颜色 */
++ (NSString *)HexRGBFromColor:(UIColor *)color;
 
 
 /* 随机颜色 */

@@ -10,15 +10,38 @@
 
 @implementation NSString (BFHelper)
 
+- (BOOL)isNull {
+    if(self == nil || [self isKindOfClass:[NSNull class]] || [self isEmpty]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)isEmpty {
+    return [[self trimWhitespace] isEqualToString:@""];
+}
+
 // 去除空格
-- (NSString *)removeWhiteSpacesFromString {
+- (NSString *)trimWhitespace {
     NSString *trimmedString = [self stringByTrimmingCharactersInSet:
                                [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return trimmedString;
 }
 
+// 倒序字符串
+- (NSString *)reverseString {
+    NSMutableString* reverseString = [[NSMutableString alloc] init];
+    NSInteger charIndex = [self length];
+    while (charIndex > 0) {
+        charIndex --;
+        NSRange subStrRange = NSMakeRange(charIndex, 1);
+        [reverseString appendString:[self substringWithRange:subStrRange]];
+    }
+    return reverseString;
+}
+
 // 包含的单词个数
-- (NSUInteger)countNumberOfWords {
+- (NSUInteger)numberOfWords {
     NSScanner *scanner = [NSScanner scannerWithString:self];
     NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     
@@ -107,21 +130,21 @@
 }
 
 // Is Valid Email
-- (BOOL)isValidEmail {
+- (BOOL)isEmail {
     NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTestPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [emailTestPredicate evaluateWithObject:self];
 }
 
 // Is Valid Phone
-- (BOOL)isVAlidPhoneNumber {
+- (BOOL)isPhoneNumber {
     NSString *regex = @"[235689][0-9]{6}([0-9]{3})?";
     NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [test evaluateWithObject:self];
 }
 
 // Is Valid URL
-- (BOOL)isValidUrl {
+- (BOOL)isUrl {
     NSString *regex =@"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+";
     NSPredicate *urlTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     return [urlTest evaluateWithObject:self];

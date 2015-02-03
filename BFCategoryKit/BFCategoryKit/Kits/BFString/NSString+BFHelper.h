@@ -10,10 +10,18 @@
 
 @interface NSString (BFHelper)
 
+
+/* 是否是Null */
+- (BOOL)isNull ;
+/* 是否为空字符(不包含任何字符,空格除外) */
+- (BOOL)isEmpty ;
+
 /* 去除空格 */
-- (NSString *)removeWhiteSpacesFromString;
+- (NSString *)trimWhitespace;
 /* 包含的字符个数 */
-- (NSUInteger)countNumberOfWords;
+- (NSUInteger)numberOfWords;
+/* 将字符串倒序 */
+- (NSString *)reverseString;
 
 
 /* 是否包含某个字符串 */
@@ -48,11 +56,11 @@
 + (NSString *)getStringFromData:(NSData *)data;
 
 /* 是否是邮箱地址 */
-- (BOOL)isValidEmail;
+- (BOOL)isEmail;
 /* 是否是电话号码 */
-- (BOOL)isVAlidPhoneNumber;
+- (BOOL)isPhoneNumber;
 /* 是否是网址 */
-- (BOOL)isValidUrl;
+- (BOOL)isUrl;
 
 
 @end
