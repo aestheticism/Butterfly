@@ -11,6 +11,8 @@
 		CD54CB4F1A81E587003B0268 /* NSString+BFCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB4E1A81E587003B0268 /* NSString+BFCrypto.m */; };
 		CD54CB521A81E5E7003B0268 /* NSString+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB511A81E5E7003B0268 /* NSString+BFURLEncode.m */; };
 		CD54CB561A81E809003B0268 /* NSDictionary+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */; };
+		CD54CB591A81EE72003B0268 /* UIColor+BFCrayola.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */; };
+		CD54CB5D1A8211A4003B0268 /* UIImageView+BFLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */; };
 		CD920C661A80EEA600425A21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C651A80EEA600425A21 /* main.m */; };
 		CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C681A80EEA600425A21 /* AppDelegate.m */; };
 		CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C6B1A80EEA600425A21 /* ViewController.m */; };
@@ -45,6 +47,10 @@
 		CD54CB511A81E5E7003B0268 /* NSString+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFURLEncode.m"; sourceTree = "<group>"; };
 		CD54CB541A81E809003B0268 /* NSDictionary+BFURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BFURLEncode.h"; sourceTree = "<group>"; };
 		CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BFURLEncode.m"; sourceTree = "<group>"; };
+		CD54CB571A81EE72003B0268 /* UIColor+BFCrayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFCrayola.h"; sourceTree = "<group>"; };
+		CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFCrayola.m"; sourceTree = "<group>"; };
+		CD54CB5B1A8211A4003B0268 /* UIImageView+BFLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BFLetters.h"; sourceTree = "<group>"; };
+		CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BFLetters.m"; sourceTree = "<group>"; };
 		CD920C601A80EEA600425A21 /* BFCategoryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFCategoryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C641A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C651A80EEA600425A21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +103,15 @@
 				CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */,
 			);
 			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		CD54CB5A1A821008003B0268 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CD54CB5B1A8211A4003B0268 /* UIImageView+BFLetters.h */,
+				CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		CD920C571A80EEA600425A21 = {
@@ -162,6 +177,7 @@
 		CD920C941A80FA7100425A21 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				CD54CB5A1A821008003B0268 /* ImageView */,
 				CD54CB531A81E7EC003B0268 /* Dictionary */,
 				CD920CA91A8118F300425A21 /* UITextField */,
 				CD920CA51A81106000425A21 /* BFImage */,
@@ -177,6 +193,8 @@
 			children = (
 				CD920C9A1A80FA9100425A21 /* UIColor+BFColors.h */,
 				CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */,
+				CD54CB571A81EE72003B0268 /* UIColor+BFCrayola.h */,
+				CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */,
 			);
 			path = BFColor;
 			sourceTree = "<group>";
@@ -329,7 +347,9 @@
 				CD920CA01A81007000425A21 /* UIView+BFAnimation.m in Sources */,
 				CD920C991A80FA7100425A21 /* NSString+BFHelper.m in Sources */,
 				CD920CA81A81108700425A21 /* UIImage+BFAdditional.m in Sources */,
+				CD54CB5D1A8211A4003B0268 /* UIImageView+BFLetters.m in Sources */,
 				CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */,
+				CD54CB591A81EE72003B0268 /* UIColor+BFCrayola.m in Sources */,
 				CD54CB521A81E5E7003B0268 /* NSString+BFURLEncode.m in Sources */,
 				CD920C661A80EEA600425A21 /* main.m in Sources */,
 				CD54CB4C1A81E497003B0268 /* NSString+BFEncryption.m in Sources */,
