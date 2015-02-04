@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BFViewKit/BFViewKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BFCategoryKit/BFCategoryKit.xcodeproj">
    </FileRef>
    <FileRef
