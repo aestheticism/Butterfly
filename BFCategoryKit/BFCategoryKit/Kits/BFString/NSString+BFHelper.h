@@ -59,8 +59,5 @@
 - (BOOL)isEmail;
 /* 是否是电话号码 */
 - (BOOL)isPhoneNumber;
-/* 是否是网址 */
-- (BOOL)isUrl;
-
 
 @end

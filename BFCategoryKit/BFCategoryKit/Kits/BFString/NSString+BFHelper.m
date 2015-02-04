@@ -143,11 +143,4 @@
     return [test evaluateWithObject:self];
 }
 
-// Is Valid URL
-- (BOOL)isUrl {
-    NSString *regex =@"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+";
-    NSPredicate *urlTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
-    return [urlTest evaluateWithObject:self];
-}
-
 @end
