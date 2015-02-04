@@ -13,6 +13,7 @@
 		CD54CB561A81E809003B0268 /* NSDictionary+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */; };
 		CD54CB591A81EE72003B0268 /* UIColor+BFCrayola.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */; };
 		CD54CB5D1A8211A4003B0268 /* UIImageView+BFLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */; };
+		CD54CB601A821749003B0268 /* UIImage+BFImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */; };
 		CD920C661A80EEA600425A21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C651A80EEA600425A21 /* main.m */; };
 		CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C681A80EEA600425A21 /* AppDelegate.m */; };
 		CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C6B1A80EEA600425A21 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFCrayola.m"; sourceTree = "<group>"; };
 		CD54CB5B1A8211A4003B0268 /* UIImageView+BFLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BFLetters.h"; sourceTree = "<group>"; };
 		CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BFLetters.m"; sourceTree = "<group>"; };
+		CD54CB5E1A821749003B0268 /* UIImage+BFImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFImageEffects.h"; sourceTree = "<group>"; };
+		CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFImageEffects.m"; sourceTree = "<group>"; };
 		CD920C601A80EEA600425A21 /* BFCategoryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFCategoryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C641A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C651A80EEA600425A21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				CD920CA71A81108700425A21 /* UIImage+BFAdditional.m */,
 				CD920CAD1A811DB900425A21 /* UIImage+BFGifImage.h */,
 				CD920CAE1A811DB900425A21 /* UIImage+BFGifImage.m */,
+				CD54CB5E1A821749003B0268 /* UIImage+BFImageEffects.h */,
+				CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */,
 			);
 			path = BFImage;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				CD54CB521A81E5E7003B0268 /* NSString+BFURLEncode.m in Sources */,
 				CD920C661A80EEA600425A21 /* main.m in Sources */,
 				CD54CB4C1A81E497003B0268 /* NSString+BFEncryption.m in Sources */,
+				CD54CB601A821749003B0268 /* UIImage+BFImageEffects.m in Sources */,
 				CD920CAC1A81190900425A21 /* UITextField+BFShake.m in Sources */,
 				CD920C9C1A80FA9100425A21 /* UIColor+BFColors.m in Sources */,
 				CD54CB561A81E809003B0268 /* NSDictionary+BFURLEncode.m in Sources */,
