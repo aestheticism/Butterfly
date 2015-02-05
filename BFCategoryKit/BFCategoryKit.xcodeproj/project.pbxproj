@@ -27,6 +27,11 @@
 		CD920C711A80EEA600425A21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD920C701A80EEA600425A21 /* Images.xcassets */; };
 		CD920C741A80EEA600425A21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD920C721A80EEA600425A21 /* LaunchScreen.xib */; };
 		CD920C801A80EEA600425A21 /* BFCategoryKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */; };
+		CD9FF78F1A83375C00111ED5 /* NSArray+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FF78E1A83375C00111ED5 /* NSArray+BFAdditional.m */; };
+		CD9FF7951A835D8A00111ED5 /* NSDictionary+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FF7941A835D8A00111ED5 /* NSDictionary+BFAdditional.m */; };
+		CD9FF7981A83609800111ED5 /* NSMutableArray+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FF7971A83609800111ED5 /* NSMutableArray+BFAdditional.m */; };
+		CD9FF79B1A8366F400111ED5 /* NSMutableDictionary+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FF79A1A8366F400111ED5 /* NSMutableDictionary+BFAdditional.m */; };
+		CD9FF79F1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FF79E1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,16 @@
 		CD920C791A80EEA600425A21 /* BFCategoryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCategoryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C7E1A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCategoryKitTests.m; sourceTree = "<group>"; };
+		CD9FF78D1A83375C00111ED5 /* NSArray+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BFAdditional.h"; sourceTree = "<group>"; };
+		CD9FF78E1A83375C00111ED5 /* NSArray+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BFAdditional.m"; sourceTree = "<group>"; };
+		CD9FF7931A835D8A00111ED5 /* NSDictionary+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BFAdditional.h"; sourceTree = "<group>"; };
+		CD9FF7941A835D8A00111ED5 /* NSDictionary+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BFAdditional.m"; sourceTree = "<group>"; };
+		CD9FF7961A83609800111ED5 /* NSMutableArray+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BFAdditional.h"; sourceTree = "<group>"; };
+		CD9FF7971A83609800111ED5 /* NSMutableArray+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BFAdditional.m"; sourceTree = "<group>"; };
+		CD9FF7991A8366F400111ED5 /* NSMutableDictionary+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+BFAdditional.h"; sourceTree = "<group>"; };
+		CD9FF79A1A8366F400111ED5 /* NSMutableDictionary+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+BFAdditional.m"; sourceTree = "<group>"; };
+		CD9FF79D1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+BFAdditional.h"; sourceTree = "<group>"; };
+		CD9FF79E1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+BFAdditional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,10 @@
 			children = (
 				CD49274D1A8335AF00DADC51 /* NSDictionary+BFURLEncode.h */,
 				CD49274E1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m */,
+				CD9FF7931A835D8A00111ED5 /* NSDictionary+BFAdditional.h */,
+				CD9FF7941A835D8A00111ED5 /* NSDictionary+BFAdditional.m */,
+				CD9FF7991A8366F400111ED5 /* NSMutableDictionary+BFAdditional.h */,
+				CD9FF79A1A8366F400111ED5 /* NSMutableDictionary+BFAdditional.m */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -237,15 +256,37 @@
 		CD920C941A80FA7100425A21 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				CD4927651A8335AF00DADC51 /* View */,
+				CD9FF78C1A8336A200111ED5 /* Array */,
 				CD4927471A8335AF00DADC51 /* Color */,
 				CD49274C1A8335AF00DADC51 /* Dictionary */,
 				CD49274F1A8335AF00DADC51 /* Image */,
 				CD4927561A8335AF00DADC51 /* ImageView */,
 				CD4927591A8335AF00DADC51 /* String */,
 				CD4927621A8335AF00DADC51 /* TextField */,
-				CD4927651A8335AF00DADC51 /* View */,
+				CD9FF79C1A836CD100111ED5 /* NSUserDefaults */,
 			);
 			path = Kits;
+			sourceTree = "<group>";
+		};
+		CD9FF78C1A8336A200111ED5 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				CD9FF78D1A83375C00111ED5 /* NSArray+BFAdditional.h */,
+				CD9FF78E1A83375C00111ED5 /* NSArray+BFAdditional.m */,
+				CD9FF7961A83609800111ED5 /* NSMutableArray+BFAdditional.h */,
+				CD9FF7971A83609800111ED5 /* NSMutableArray+BFAdditional.m */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		CD9FF79C1A836CD100111ED5 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CD9FF79D1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.h */,
+				CD9FF79E1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.m */,
+			);
+			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +391,8 @@
 			files = (
 				CD49276A1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m in Sources */,
 				CD4927691A8335AF00DADC51 /* UIColor+BFCrayola.m in Sources */,
+				CD9FF79B1A8366F400111ED5 /* NSMutableDictionary+BFAdditional.m in Sources */,
+				CD9FF78F1A83375C00111ED5 /* NSArray+BFAdditional.m in Sources */,
 				CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */,
 				CD49276B1A8335AF00DADC51 /* UIImage+BFAdditional.m in Sources */,
 				CD49276E1A8335AF00DADC51 /* UIImageView+BFLetters.m in Sources */,
@@ -358,12 +401,15 @@
 				CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */,
 				CD4927721A8335AF00DADC51 /* NSString+BFURLEncode.m in Sources */,
 				CD920C661A80EEA600425A21 /* main.m in Sources */,
+				CD9FF79F1A836D1B00111ED5 /* NSUserDefaults+BFAdditional.m in Sources */,
 				CD4927701A8335AF00DADC51 /* NSString+BFEncryption.m in Sources */,
 				CD4927741A8335AF00DADC51 /* UIView+BFAnimation.m in Sources */,
+				CD9FF7981A83609800111ED5 /* NSMutableArray+BFAdditional.m in Sources */,
 				CD4927681A8335AF00DADC51 /* UIColor+BFColors.m in Sources */,
 				CD49276D1A8335AF00DADC51 /* UIImage+BFImageEffects.m in Sources */,
 				CD49276F1A8335AF00DADC51 /* NSString+BFCrypto.m in Sources */,
 				CD4927711A8335AF00DADC51 /* NSString+BFHelper.m in Sources */,
+				CD9FF7951A835D8A00111ED5 /* NSDictionary+BFAdditional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -75,13 +75,13 @@
 /* 缩放图片 */
 - (UIImage*)scaleToSize:(CGSize)newSize {
     
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContext(newSize);
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(context, 0.0, size.height);
+    CGContextTranslateCTM(context, 0.0, newSize.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     
-    CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, size.width, size.height), self.CGImage);
+    CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, newSize.width, newSize.height), self.CGImage);
     
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     
