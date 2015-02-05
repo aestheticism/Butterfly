@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD54CB4C1A81E497003B0268 /* NSString+BFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB4B1A81E497003B0268 /* NSString+BFEncryption.m */; };
-		CD54CB4F1A81E587003B0268 /* NSString+BFCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB4E1A81E587003B0268 /* NSString+BFCrypto.m */; };
-		CD54CB521A81E5E7003B0268 /* NSString+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB511A81E5E7003B0268 /* NSString+BFURLEncode.m */; };
-		CD54CB561A81E809003B0268 /* NSDictionary+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */; };
-		CD54CB591A81EE72003B0268 /* UIColor+BFCrayola.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */; };
-		CD54CB5D1A8211A4003B0268 /* UIImageView+BFLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */; };
-		CD54CB601A821749003B0268 /* UIImage+BFImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */; };
+		CD4927681A8335AF00DADC51 /* UIColor+BFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927491A8335AF00DADC51 /* UIColor+BFColors.m */; };
+		CD4927691A8335AF00DADC51 /* UIColor+BFCrayola.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49274B1A8335AF00DADC51 /* UIColor+BFCrayola.m */; };
+		CD49276A1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49274E1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m */; };
+		CD49276B1A8335AF00DADC51 /* UIImage+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927511A8335AF00DADC51 /* UIImage+BFAdditional.m */; };
+		CD49276C1A8335AF00DADC51 /* UIImage+BFGifImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927531A8335AF00DADC51 /* UIImage+BFGifImage.m */; };
+		CD49276D1A8335AF00DADC51 /* UIImage+BFImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927551A8335AF00DADC51 /* UIImage+BFImageEffects.m */; };
+		CD49276E1A8335AF00DADC51 /* UIImageView+BFLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927581A8335AF00DADC51 /* UIImageView+BFLetters.m */; };
+		CD49276F1A8335AF00DADC51 /* NSString+BFCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49275B1A8335AF00DADC51 /* NSString+BFCrypto.m */; };
+		CD4927701A8335AF00DADC51 /* NSString+BFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49275D1A8335AF00DADC51 /* NSString+BFEncryption.m */; };
+		CD4927711A8335AF00DADC51 /* NSString+BFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49275F1A8335AF00DADC51 /* NSString+BFHelper.m */; };
+		CD4927721A8335AF00DADC51 /* NSString+BFURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927611A8335AF00DADC51 /* NSString+BFURLEncode.m */; };
+		CD4927731A8335AF00DADC51 /* UITextField+BFShake.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927641A8335AF00DADC51 /* UITextField+BFShake.m */; };
+		CD4927741A8335AF00DADC51 /* UIView+BFAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4927671A8335AF00DADC51 /* UIView+BFAnimation.m */; };
 		CD920C661A80EEA600425A21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C651A80EEA600425A21 /* main.m */; };
 		CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C681A80EEA600425A21 /* AppDelegate.m */; };
 		CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C6B1A80EEA600425A21 /* ViewController.m */; };
@@ -21,12 +27,6 @@
 		CD920C711A80EEA600425A21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD920C701A80EEA600425A21 /* Images.xcassets */; };
 		CD920C741A80EEA600425A21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD920C721A80EEA600425A21 /* LaunchScreen.xib */; };
 		CD920C801A80EEA600425A21 /* BFCategoryKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */; };
-		CD920C991A80FA7100425A21 /* NSString+BFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C981A80FA7100425A21 /* NSString+BFHelper.m */; };
-		CD920C9C1A80FA9100425A21 /* UIColor+BFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */; };
-		CD920CA01A81007000425A21 /* UIView+BFAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920C9F1A81007000425A21 /* UIView+BFAnimation.m */; };
-		CD920CA81A81108700425A21 /* UIImage+BFAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920CA71A81108700425A21 /* UIImage+BFAdditional.m */; };
-		CD920CAC1A81190900425A21 /* UITextField+BFShake.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920CAB1A81190900425A21 /* UITextField+BFShake.m */; };
-		CD920CAF1A811DB900425A21 /* UIImage+BFGifImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD920CAE1A811DB900425A21 /* UIImage+BFGifImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +40,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD54CB4A1A81E497003B0268 /* NSString+BFEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFEncryption.h"; sourceTree = "<group>"; };
-		CD54CB4B1A81E497003B0268 /* NSString+BFEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFEncryption.m"; sourceTree = "<group>"; };
-		CD54CB4D1A81E587003B0268 /* NSString+BFCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFCrypto.h"; sourceTree = "<group>"; };
-		CD54CB4E1A81E587003B0268 /* NSString+BFCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFCrypto.m"; sourceTree = "<group>"; };
-		CD54CB501A81E5E7003B0268 /* NSString+BFURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFURLEncode.h"; sourceTree = "<group>"; };
-		CD54CB511A81E5E7003B0268 /* NSString+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFURLEncode.m"; sourceTree = "<group>"; };
-		CD54CB541A81E809003B0268 /* NSDictionary+BFURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BFURLEncode.h"; sourceTree = "<group>"; };
-		CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BFURLEncode.m"; sourceTree = "<group>"; };
-		CD54CB571A81EE72003B0268 /* UIColor+BFCrayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFCrayola.h"; sourceTree = "<group>"; };
-		CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFCrayola.m"; sourceTree = "<group>"; };
-		CD54CB5B1A8211A4003B0268 /* UIImageView+BFLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BFLetters.h"; sourceTree = "<group>"; };
-		CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BFLetters.m"; sourceTree = "<group>"; };
-		CD54CB5E1A821749003B0268 /* UIImage+BFImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFImageEffects.h"; sourceTree = "<group>"; };
-		CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFImageEffects.m"; sourceTree = "<group>"; };
+		CD4927481A8335AF00DADC51 /* UIColor+BFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFColors.h"; sourceTree = "<group>"; };
+		CD4927491A8335AF00DADC51 /* UIColor+BFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFColors.m"; sourceTree = "<group>"; };
+		CD49274A1A8335AF00DADC51 /* UIColor+BFCrayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFCrayola.h"; sourceTree = "<group>"; };
+		CD49274B1A8335AF00DADC51 /* UIColor+BFCrayola.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFCrayola.m"; sourceTree = "<group>"; };
+		CD49274D1A8335AF00DADC51 /* NSDictionary+BFURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BFURLEncode.h"; sourceTree = "<group>"; };
+		CD49274E1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BFURLEncode.m"; sourceTree = "<group>"; };
+		CD4927501A8335AF00DADC51 /* UIImage+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFAdditional.h"; sourceTree = "<group>"; };
+		CD4927511A8335AF00DADC51 /* UIImage+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFAdditional.m"; sourceTree = "<group>"; };
+		CD4927521A8335AF00DADC51 /* UIImage+BFGifImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFGifImage.h"; sourceTree = "<group>"; };
+		CD4927531A8335AF00DADC51 /* UIImage+BFGifImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFGifImage.m"; sourceTree = "<group>"; };
+		CD4927541A8335AF00DADC51 /* UIImage+BFImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFImageEffects.h"; sourceTree = "<group>"; };
+		CD4927551A8335AF00DADC51 /* UIImage+BFImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFImageEffects.m"; sourceTree = "<group>"; };
+		CD4927571A8335AF00DADC51 /* UIImageView+BFLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BFLetters.h"; sourceTree = "<group>"; };
+		CD4927581A8335AF00DADC51 /* UIImageView+BFLetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BFLetters.m"; sourceTree = "<group>"; };
+		CD49275A1A8335AF00DADC51 /* NSString+BFCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFCrypto.h"; sourceTree = "<group>"; };
+		CD49275B1A8335AF00DADC51 /* NSString+BFCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFCrypto.m"; sourceTree = "<group>"; };
+		CD49275C1A8335AF00DADC51 /* NSString+BFEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFEncryption.h"; sourceTree = "<group>"; };
+		CD49275D1A8335AF00DADC51 /* NSString+BFEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFEncryption.m"; sourceTree = "<group>"; };
+		CD49275E1A8335AF00DADC51 /* NSString+BFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFHelper.h"; sourceTree = "<group>"; };
+		CD49275F1A8335AF00DADC51 /* NSString+BFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFHelper.m"; sourceTree = "<group>"; };
+		CD4927601A8335AF00DADC51 /* NSString+BFURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFURLEncode.h"; sourceTree = "<group>"; };
+		CD4927611A8335AF00DADC51 /* NSString+BFURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFURLEncode.m"; sourceTree = "<group>"; };
+		CD4927631A8335AF00DADC51 /* UITextField+BFShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BFShake.h"; sourceTree = "<group>"; };
+		CD4927641A8335AF00DADC51 /* UITextField+BFShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BFShake.m"; sourceTree = "<group>"; };
+		CD4927661A8335AF00DADC51 /* UIView+BFAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BFAnimation.h"; sourceTree = "<group>"; };
+		CD4927671A8335AF00DADC51 /* UIView+BFAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BFAnimation.m"; sourceTree = "<group>"; };
 		CD920C601A80EEA600425A21 /* BFCategoryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFCategoryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C641A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C651A80EEA600425A21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,18 +79,6 @@
 		CD920C791A80EEA600425A21 /* BFCategoryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCategoryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD920C7E1A80EEA600425A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD920C7F1A80EEA600425A21 /* BFCategoryKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCategoryKitTests.m; sourceTree = "<group>"; };
-		CD920C971A80FA7100425A21 /* NSString+BFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFHelper.h"; sourceTree = "<group>"; };
-		CD920C981A80FA7100425A21 /* NSString+BFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFHelper.m"; sourceTree = "<group>"; };
-		CD920C9A1A80FA9100425A21 /* UIColor+BFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFColors.h"; sourceTree = "<group>"; };
-		CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFColors.m"; sourceTree = "<group>"; };
-		CD920C9E1A81007000425A21 /* UIView+BFAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BFAnimation.h"; sourceTree = "<group>"; };
-		CD920C9F1A81007000425A21 /* UIView+BFAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BFAnimation.m"; sourceTree = "<group>"; };
-		CD920CA61A81108700425A21 /* UIImage+BFAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFAdditional.h"; sourceTree = "<group>"; };
-		CD920CA71A81108700425A21 /* UIImage+BFAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFAdditional.m"; sourceTree = "<group>"; };
-		CD920CAA1A81190900425A21 /* UITextField+BFShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BFShake.h"; sourceTree = "<group>"; };
-		CD920CAB1A81190900425A21 /* UITextField+BFShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BFShake.m"; sourceTree = "<group>"; };
-		CD920CAD1A811DB900425A21 /* UIImage+BFGifImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BFGifImage.h"; sourceTree = "<group>"; };
-		CD920CAE1A811DB900425A21 /* UIImage+BFGifImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BFGifImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,22 +99,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD54CB531A81E7EC003B0268 /* Dictionary */ = {
+		CD4927471A8335AF00DADC51 /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				CD54CB541A81E809003B0268 /* NSDictionary+BFURLEncode.h */,
-				CD54CB551A81E809003B0268 /* NSDictionary+BFURLEncode.m */,
+				CD4927481A8335AF00DADC51 /* UIColor+BFColors.h */,
+				CD4927491A8335AF00DADC51 /* UIColor+BFColors.m */,
+				CD49274A1A8335AF00DADC51 /* UIColor+BFCrayola.h */,
+				CD49274B1A8335AF00DADC51 /* UIColor+BFCrayola.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		CD49274C1A8335AF00DADC51 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CD49274D1A8335AF00DADC51 /* NSDictionary+BFURLEncode.h */,
+				CD49274E1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
-		CD54CB5A1A821008003B0268 /* ImageView */ = {
+		CD49274F1A8335AF00DADC51 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				CD54CB5B1A8211A4003B0268 /* UIImageView+BFLetters.h */,
-				CD54CB5C1A8211A4003B0268 /* UIImageView+BFLetters.m */,
+				CD4927501A8335AF00DADC51 /* UIImage+BFAdditional.h */,
+				CD4927511A8335AF00DADC51 /* UIImage+BFAdditional.m */,
+				CD4927521A8335AF00DADC51 /* UIImage+BFGifImage.h */,
+				CD4927531A8335AF00DADC51 /* UIImage+BFGifImage.m */,
+				CD4927541A8335AF00DADC51 /* UIImage+BFImageEffects.h */,
+				CD4927551A8335AF00DADC51 /* UIImage+BFImageEffects.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		CD4927561A8335AF00DADC51 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CD4927571A8335AF00DADC51 /* UIImageView+BFLetters.h */,
+				CD4927581A8335AF00DADC51 /* UIImageView+BFLetters.m */,
 			);
 			path = ImageView;
+			sourceTree = "<group>";
+		};
+		CD4927591A8335AF00DADC51 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				CD49275A1A8335AF00DADC51 /* NSString+BFCrypto.h */,
+				CD49275B1A8335AF00DADC51 /* NSString+BFCrypto.m */,
+				CD49275C1A8335AF00DADC51 /* NSString+BFEncryption.h */,
+				CD49275D1A8335AF00DADC51 /* NSString+BFEncryption.m */,
+				CD49275E1A8335AF00DADC51 /* NSString+BFHelper.h */,
+				CD49275F1A8335AF00DADC51 /* NSString+BFHelper.m */,
+				CD4927601A8335AF00DADC51 /* NSString+BFURLEncode.h */,
+				CD4927611A8335AF00DADC51 /* NSString+BFURLEncode.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		CD4927621A8335AF00DADC51 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				CD4927631A8335AF00DADC51 /* UITextField+BFShake.h */,
+				CD4927641A8335AF00DADC51 /* UITextField+BFShake.m */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		CD4927651A8335AF00DADC51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD4927661A8335AF00DADC51 /* UIView+BFAnimation.h */,
+				CD4927671A8335AF00DADC51 /* UIView+BFAnimation.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD920C571A80EEA600425A21 = {
@@ -180,72 +237,15 @@
 		CD920C941A80FA7100425A21 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
-				CD54CB5A1A821008003B0268 /* ImageView */,
-				CD54CB531A81E7EC003B0268 /* Dictionary */,
-				CD920CA91A8118F300425A21 /* UITextField */,
-				CD920CA51A81106000425A21 /* BFImage */,
-				CD920C9D1A81005500425A21 /* BFView */,
-				CD920C951A80FA7100425A21 /* BFColor */,
-				CD920C961A80FA7100425A21 /* BFString */,
+				CD4927471A8335AF00DADC51 /* Color */,
+				CD49274C1A8335AF00DADC51 /* Dictionary */,
+				CD49274F1A8335AF00DADC51 /* Image */,
+				CD4927561A8335AF00DADC51 /* ImageView */,
+				CD4927591A8335AF00DADC51 /* String */,
+				CD4927621A8335AF00DADC51 /* TextField */,
+				CD4927651A8335AF00DADC51 /* View */,
 			);
 			path = Kits;
-			sourceTree = "<group>";
-		};
-		CD920C951A80FA7100425A21 /* BFColor */ = {
-			isa = PBXGroup;
-			children = (
-				CD920C9A1A80FA9100425A21 /* UIColor+BFColors.h */,
-				CD920C9B1A80FA9100425A21 /* UIColor+BFColors.m */,
-				CD54CB571A81EE72003B0268 /* UIColor+BFCrayola.h */,
-				CD54CB581A81EE72003B0268 /* UIColor+BFCrayola.m */,
-			);
-			path = BFColor;
-			sourceTree = "<group>";
-		};
-		CD920C961A80FA7100425A21 /* BFString */ = {
-			isa = PBXGroup;
-			children = (
-				CD920C971A80FA7100425A21 /* NSString+BFHelper.h */,
-				CD920C981A80FA7100425A21 /* NSString+BFHelper.m */,
-				CD54CB4A1A81E497003B0268 /* NSString+BFEncryption.h */,
-				CD54CB4B1A81E497003B0268 /* NSString+BFEncryption.m */,
-				CD54CB4D1A81E587003B0268 /* NSString+BFCrypto.h */,
-				CD54CB4E1A81E587003B0268 /* NSString+BFCrypto.m */,
-				CD54CB501A81E5E7003B0268 /* NSString+BFURLEncode.h */,
-				CD54CB511A81E5E7003B0268 /* NSString+BFURLEncode.m */,
-			);
-			path = BFString;
-			sourceTree = "<group>";
-		};
-		CD920C9D1A81005500425A21 /* BFView */ = {
-			isa = PBXGroup;
-			children = (
-				CD920C9E1A81007000425A21 /* UIView+BFAnimation.h */,
-				CD920C9F1A81007000425A21 /* UIView+BFAnimation.m */,
-			);
-			path = BFView;
-			sourceTree = "<group>";
-		};
-		CD920CA51A81106000425A21 /* BFImage */ = {
-			isa = PBXGroup;
-			children = (
-				CD920CA61A81108700425A21 /* UIImage+BFAdditional.h */,
-				CD920CA71A81108700425A21 /* UIImage+BFAdditional.m */,
-				CD920CAD1A811DB900425A21 /* UIImage+BFGifImage.h */,
-				CD920CAE1A811DB900425A21 /* UIImage+BFGifImage.m */,
-				CD54CB5E1A821749003B0268 /* UIImage+BFImageEffects.h */,
-				CD54CB5F1A821749003B0268 /* UIImage+BFImageEffects.m */,
-			);
-			path = BFImage;
-			sourceTree = "<group>";
-		};
-		CD920CA91A8118F300425A21 /* UITextField */ = {
-			isa = PBXGroup;
-			children = (
-				CD920CAA1A81190900425A21 /* UITextField+BFShake.h */,
-				CD920CAB1A81190900425A21 /* UITextField+BFShake.m */,
-			);
-			path = UITextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,22 +348,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD49276A1A8335AF00DADC51 /* NSDictionary+BFURLEncode.m in Sources */,
+				CD4927691A8335AF00DADC51 /* UIColor+BFCrayola.m in Sources */,
 				CD920C6C1A80EEA600425A21 /* ViewController.m in Sources */,
-				CD920CA01A81007000425A21 /* UIView+BFAnimation.m in Sources */,
-				CD920C991A80FA7100425A21 /* NSString+BFHelper.m in Sources */,
-				CD920CA81A81108700425A21 /* UIImage+BFAdditional.m in Sources */,
-				CD54CB5D1A8211A4003B0268 /* UIImageView+BFLetters.m in Sources */,
+				CD49276B1A8335AF00DADC51 /* UIImage+BFAdditional.m in Sources */,
+				CD49276E1A8335AF00DADC51 /* UIImageView+BFLetters.m in Sources */,
+				CD4927731A8335AF00DADC51 /* UITextField+BFShake.m in Sources */,
+				CD49276C1A8335AF00DADC51 /* UIImage+BFGifImage.m in Sources */,
 				CD920C691A80EEA600425A21 /* AppDelegate.m in Sources */,
-				CD54CB591A81EE72003B0268 /* UIColor+BFCrayola.m in Sources */,
-				CD54CB521A81E5E7003B0268 /* NSString+BFURLEncode.m in Sources */,
+				CD4927721A8335AF00DADC51 /* NSString+BFURLEncode.m in Sources */,
 				CD920C661A80EEA600425A21 /* main.m in Sources */,
-				CD54CB4C1A81E497003B0268 /* NSString+BFEncryption.m in Sources */,
-				CD54CB601A821749003B0268 /* UIImage+BFImageEffects.m in Sources */,
-				CD920CAC1A81190900425A21 /* UITextField+BFShake.m in Sources */,
-				CD920C9C1A80FA9100425A21 /* UIColor+BFColors.m in Sources */,
-				CD54CB561A81E809003B0268 /* NSDictionary+BFURLEncode.m in Sources */,
-				CD920CAF1A811DB900425A21 /* UIImage+BFGifImage.m in Sources */,
-				CD54CB4F1A81E587003B0268 /* NSString+BFCrypto.m in Sources */,
+				CD4927701A8335AF00DADC51 /* NSString+BFEncryption.m in Sources */,
+				CD4927741A8335AF00DADC51 /* UIView+BFAnimation.m in Sources */,
+				CD4927681A8335AF00DADC51 /* UIColor+BFColors.m in Sources */,
+				CD49276D1A8335AF00DADC51 /* UIImage+BFImageEffects.m in Sources */,
+				CD49276F1A8335AF00DADC51 /* NSString+BFCrypto.m in Sources */,
+				CD4927711A8335AF00DADC51 /* NSString+BFHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
